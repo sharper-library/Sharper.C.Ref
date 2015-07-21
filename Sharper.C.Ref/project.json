@@ -1,0 +1,17 @@
+﻿{
+    "version": "0.1.2-*",
+    "description": "Mutable references.",
+    "authors": [ "Jeremy Hughes" ],
+    "projectUrl": "https://github.com/sharper-library/Sharper.C.Ref",
+    "licenseUrl": "https://raw.githubusercontent.com/sharper-library/Sharper.C.Ref/master/LICENSE.txt",
+
+    "dependencies": {
+        "System.Runtime": "4.0",
+        "System.Threading": "4.0",
+        "Sharper.C.Unit": "0.1.3-*"
+    },
+
+    "frameworks": {
+        "dotnet": { }
+    }
+}

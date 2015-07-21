@@ -8,14 +8,13 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>17f754c9-f700-43a6-a880-03b9aec74a51</ProjectGuid>
     <RootNamespace>Sharper.C</RootNamespace>
-    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AssemblyName>Sharper.C.Ref</AssemblyName>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
+    <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <ProduceOutputsOnBuild>True</ProduceOutputsOnBuild>

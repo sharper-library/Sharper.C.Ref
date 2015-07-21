@@ -1,15 +1,9 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47079798-CDF7-42D7-B5E9-4A0EB9948121}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B81A4F7F-513C-4453-B44E-8763E7DD8249}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sharper.C.Ref", "src\Sharper.C.Ref\Sharper.C.Ref.xproj", "{17F754C9-F700-43A6-A880-03B9AEC74A51}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sharper.C.Ref", "Sharper.C.Ref\Sharper.C.Ref.xproj", "{17F754C9-F700-43A6-A880-03B9AEC74A51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +18,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{17F754C9-F700-43A6-A880-03B9AEC74A51} = {47079798-CDF7-42D7-B5E9-4A0EB9948121}
 	EndGlobalSection
 EndGlobal

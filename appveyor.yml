@@ -25,20 +25,14 @@ init:
 
 shallow_clone: true
 
-clone_depth: 5
-
-assembly_info:
-  patch: true
-  file: AssemblyInfo.*
-  assembly_version: "0.1.{build}"
-  assembly_file_version: "{version}"
-  assembly_informational_version: "{version}"
+clone_depth: 1
 
 install:
-  - ps: dnu restore src/Sharper.C.Ref
+  - ps: $env:SRC_DIR = (get-content .src)
+  - ps: dnu restore $env:SRC_DIR
 
 build_script:
-  - ps: dnu pack src/Sharper.C.Ref
+  - ps: dnu pack --configuration Release $env:SRC_DIR
 
 artifacts:
   - path: '**\*.nupkg'
