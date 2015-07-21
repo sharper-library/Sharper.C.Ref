@@ -1,0 +1,49 @@
+version: '{branch}-{build}'
+
+os: Visual Studio 2015 RC
+
+environment:
+  DNX_FEED: https://www.nuget.org/api/v2
+  DNX_BUILD_VERSION: build$(appveyor_build_number)
+
+nuget:
+  account_feed: true
+  project_feed: true
+  disable_publish_on_pr: true
+
+branches:
+  only:
+    - master
+
+skip_tags: true
+
+skip_commits:
+  message: /\<\.nobuild\>
+
+init:
+  - ps: dnvm install latest
+
+shallow_clone: true
+
+clone_depth: 5
+
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "0.1.{build}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
+
+install:
+  - ps: dnu restore src/Sharper.C.Ref
+
+build_script:
+  - ps: dnu pack src/Sharper.C.Ref
+
+artifacts:
+  - path: '**\*.nupkg'
+
+notifications:
+  - provider: Email
+    to: jedahu@gmail.com
+    on_build_status_changed: true
