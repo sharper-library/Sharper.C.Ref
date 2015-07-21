@@ -2,13 +2,57 @@
   "locked": false,
   "version": -9998,
   "projectFileDependencyGroups": {
-    "": [],
+    "": [
+      "Sharper.C.Unit >= 0.1.1"
+    ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": [
       "System.Threading >= 4.0.10-beta-22816"
     ]
   },
   "libraries": {
+    "Sharper.C.Unit/0.1.1": {
+      "serviceable": false,
+      "sha": "E5hI/XuGDG47aVuZCHDIEzss3qFAJQ5uIRRGnlKDScyz+a8+2E/VdZRJMMezUUxG1U4crPTNKpDlo0lWiPKICQ==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [
+            "mscorlib",
+            "System",
+            "System.Core",
+            "Microsoft.CSharp"
+          ],
+          "runtimeAssemblies": [
+            "lib/dnx451/Sharper.C.Unit.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnx451/Sharper.C.Unit.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "System.Threading": "4.0.10-beta-22816"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/dnxcore50/Sharper.C.Unit.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnxcore50/Sharper.C.Unit.dll"
+          ]
+        }
+      },
+      "files": [
+        "Sharper.C.Unit.0.1.1.nupkg",
+        "Sharper.C.Unit.0.1.1.nupkg.sha512",
+        "Sharper.C.Unit.nuspec",
+        "lib/dnx451/Sharper.C.Unit.dll",
+        "lib/dnx451/Sharper.C.Unit.xml",
+        "lib/dnxcore50/Sharper.C.Unit.dll",
+        "lib/dnxcore50/Sharper.C.Unit.xml"
+      ]
+    },
     "System.Runtime/4.0.20-beta-22816": {
       "serviceable": false,
       "sha": "sDSJEmM6Q5O7Nn9XxHTrsEJ4bv4hsBdeTWjuvyzd9/u9ujl9AWa3q1XFLrdPZetILPOC1P0+1LOCq4kZcsKF5Q==",

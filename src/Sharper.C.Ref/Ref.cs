@@ -23,12 +23,13 @@ namespace Sharper.C
             }
         }
 
-        public void Change(A a)
+        public Unit Change(A a)
         {
             lock (updateLock)
             {
                 value = a;
             }
+            return default(Unit);
         }
     }
 
