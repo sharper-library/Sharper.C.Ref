@@ -7,7 +7,7 @@
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>17f754c9-f700-43a6-a880-03b9aec74a51</ProjectGuid>
-    <RootNamespace>Sharper.C</RootNamespace>
+    <RootNamespace>Sharper.C.Data</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AssemblyName>Sharper.C.Ref</AssemblyName>
