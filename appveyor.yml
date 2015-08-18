@@ -1,6 +1,6 @@
 version: '{branch}-{build}'
 
-os: Visual Studio 2015 RC
+os: Visual Studio 2015
 
 environment:
   DNX_FEED: https://www.nuget.org/api/v2
@@ -36,6 +36,14 @@ build_script:
 
 artifacts:
   - path: '**\*.nupkg'
+
+deploy:
+  - provider: NuGet
+    server: https://www.myget.org/F/sharper-c/api/v2/package
+    api_key:
+      secure: vw1oq34RgUGX7J5FSU4KwT0OCyr/OBaY8NGAqa096ahvtmDmkWHUTNXdZ6cMd6Q8
+    skip_symbols: false
+    symbol_server: https://nuget.symbolsource.org/MyGet/sharper-c
 
 notifications:
   - provider: Email
